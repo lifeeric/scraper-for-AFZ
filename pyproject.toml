@@ -6,8 +6,9 @@ authors = ["lifeeric"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.9"
 selenium = "^4.11.2"
+webdriver-manager = "^4.0.0"
 
 
 [build-system]

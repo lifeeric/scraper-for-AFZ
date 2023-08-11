@@ -1,16 +1,23 @@
-import time
 import csv
-from pprint import pprint
+import json
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from webdriver_manager.chrome import ChromeDriverManager
+
+# Set up Chrome options for headless mode
+chrome_options = Options()
+chrome_options.add_argument("--headless")
+
+# Create a ChromeDriver instance with Chrome options
+browser = webdriver.Chrome(
+    executable_path=ChromeDriverManager().install(), options=chrome_options
+)
 
 
-browser = webdriver.Chrome()
-
-
-def main():
+def scrape_data(zipcode):
     # Open the desired website
     browser.get("https://www.agrar-fischerei-zahlungen.de/Suche")
 
@@ -19,7 +26,7 @@ def main():
         zip_code = browser.find_element(By.CLASS_NAME, "textPlz")
 
         # Input data into the field
-        zip_code.send_keys("84076")
+        zip_code.send_keys(zipcode)
 
         # Locate and click the submit button
         browser.find_element(By.XPATH, "//input[@type='submit']").click()
@@ -52,22 +59,49 @@ def main():
             write_to_file({"name": header, "Total": total_price[0].text, **name_price})
             browser.back()
 
-        time.sleep(5)
-
     except Exception as e:
         print("An error occurred:", e)
-
-    finally:
-        # Close the browser window
-        browser.quit()
 
 
 def write_to_file(data):
     with open("data.csv", "a", newline="", encoding="utf-8") as f:
         fieldnames = list(data.keys())
         writer = csv.DictWriter(f, fieldnames=fieldnames)
-        writer.writeheader()
         writer.writerow(data)
+
+
+def main():
+    with open(
+        "georef-germany-postleitzahl.json",
+        "r",
+        newline="",
+    ) as f:
+        data = json.load(f)
+
+        for i, row in enumerate(data):
+            scrape_data(row["name"])
+            printProgressBar(
+                i + 1,
+                len(data),
+                prefix="Progress:",
+                suffix="Complete",
+                length=70,
+            )
+
+    browser.quit()
+
+
+# Print iterations progress
+def printProgressBar(
+    iteration, total, prefix="", suffix="", decimals=1, length=100, fill="█"
+):
+    percent = ("{0:." + str(decimals) + "f}").format(100 * (iteration / float(total)))
+    filledLength = int(length * iteration // total)
+    bar = fill * filledLength + "-" * (length - filledLength)
+    print("\r%s |%s| %s%% %s" % (prefix, bar, percent, suffix), end="\r")
+    # Print New Line on Complete
+    if iteration == total:
+        print()
 
 
 if __name__ == "__main__":
