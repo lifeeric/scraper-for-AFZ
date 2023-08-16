@@ -1,7 +1,9 @@
+import re
 import csv
 import json
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -31,36 +33,67 @@ def scrape_data(zipcode):
         # Locate and click the submit button
         browser.find_element(By.XPATH, "//input[@type='submit']").click()
 
-        all_elements = browser.find_elements(By.CLASS_NAME, "linkBeg")
+        # render 50 rows per page
+        dropdown = browser.find_element(By.CLASS_NAME, "listNavSelect")
+        dropdown.send_keys("50")
+        total_pages, pages = pagination(browser)
 
-        for i, _ in enumerate(all_elements):
-            browser.find_elements(By.CLASS_NAME, "linkBeg")[i].click()
+        for pn in range(1, int(total_pages) + 1):
+            _, pages = pagination(browser)
 
-            WebDriverWait(browser, 5).until(
-                EC.presence_of_element_located(
-                    (By.XPATH, '//p[@style="margin-top: 2em; padding-bottom: 2em;"]')
+            # Scrolls up to the top of the page
+            browser.execute_script("scrollBy(0,0)")
+            scroll_up = browser.find_element(By.TAG_NAME, "html")
+            scroll_up.send_keys(Keys.HOME)
+
+            pages.clear()
+            pages.send_keys(pn)
+            pages.send_keys(Keys.ENTER)
+
+            # Get all the links and iterate over it
+            all_elements = browser.find_elements(By.CLASS_NAME, "linkBeg")
+            for i, _ in enumerate(all_elements):
+                browser.find_elements(By.CLASS_NAME, "linkBeg")[i].click()
+
+                WebDriverWait(browser, 5).until(
+                    EC.presence_of_element_located(
+                        (
+                            By.XPATH,
+                            '//p[@style="margin-top: 2em; padding-bottom: 2em;"]',
+                        )
+                    )
                 )
-            )
 
-            # Header
-            header = browser.find_element(By.TAG_NAME, "h2").text
-            names = browser.find_elements(By.TAG_NAME, "h3")
-            prices = browser.find_elements(
-                By.XPATH, '//p[@style="margin-bottom: 0; text-align: right;"]'
-            )
-            total_price = browser.find_element(
-                By.XPATH, '//p[@style="margin-top: 2em; padding-bottom: 2em;"]'
-            ).find_elements(By.CLASS_NAME, "betrag")
+                # Header
+                header = browser.find_element(By.TAG_NAME, "h2").text
+                names = browser.find_elements(By.TAG_NAME, "h3")
+                prices = browser.find_elements(
+                    By.XPATH, '//p[@style="margin-bottom: 0; text-align: right;"]'
+                )
+                total_price = browser.find_element(
+                    By.XPATH, '//p[@style="margin-top: 2em; padding-bottom: 2em;"]'
+                ).find_elements(By.CLASS_NAME, "betrag")
 
-            name_price = {}
-            for j in range(len(names)):
-                name_price[names[j].text] = prices[j].text
+                name_price = {}
+                for j in range(len(names)):
+                    name_price[names[j].text] = prices[j].text
 
-            write_to_file({"name": header, "Total": total_price[0].text, **name_price})
-            browser.back()
+                write_to_file(
+                    {"name": header, "Total": total_price[0].text, **name_price}
+                )
+                browser.back()
 
     except Exception as e:
         print("An error occurred:", e)
+
+
+def pagination(browser):
+    # Pagination
+    list_nav_right = browser.find_element(By.ID, "listNavRight")
+    pages = list_nav_right.find_element(By.CLASS_NAME, "listNavTxtPage")
+
+    total_pages = re.findall("\d+", list_nav_right.text)[0]
+    return total_pages, pages
 
 
 def write_to_file(data):
