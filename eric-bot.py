@@ -19,6 +19,27 @@ browser = webdriver.Chrome(
 )
 
 
+# CSV Header
+headers = [
+    "name",
+    "Total",
+    "EGFL: Basisprämie",
+    "EGFL: Umverteilungsprämie",
+    "EGFL: Greening-Prämie",
+    "EGFL: Erstattung nicht genutzter Mittel der Krisenreserve",
+    "ELER: Agrarumwelt- und Klimaschutzmaßnahmen",
+    "ELER: Ausgleichszulage benachteiligte Gebiete",
+    "ELER: Basisdienstleistungen und Dorferneuerung",
+    "EGFL: Junglandwirteprämie",
+    "ELER: Ökologischer Landbau",
+    "ELER: Natur- und Gewässerschutz",
+    "ELER: Tierschutzmaßnahmen",
+    "ELER: LEADER",
+    "ELER: Investitionen in materielle Vermögenswerte",
+    "ELER: Zusammenarbeit",
+]
+
+
 def scrape_data(zipcode):
     # Open the desired website
     browser.get("https://www.agrar-fischerei-zahlungen.de/Suche")
@@ -98,9 +119,13 @@ def pagination(browser):
 
 def write_to_file(data):
     with open("data.csv", "a", newline="", encoding="utf-8") as f:
-        fieldnames = list(data.keys())
-        writer = csv.DictWriter(f, fieldnames=fieldnames)
-        writer.writerow(data)
+        try:
+            writer = csv.DictWriter(f, fieldnames=headers)
+            writer.writerow(data)
+        except:
+            print("[❌] ERROR_INCORRECT_DATA")
+            print(f"[HEADER] {headers}")
+            print(f"[ROW] {data}")
 
 
 def main():
