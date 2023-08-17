@@ -12,7 +12,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 # Set up Chrome options for headless mode
 chrome_options = Options()
-chrome_options.add_argument("--headless")
+# chrome_options.add_argument("--headless")
 
 # Create a ChromeDriver instance with Chrome options
 browser = webdriver.Chrome(
@@ -38,6 +38,13 @@ headers = [
     "ELER: LEADER",
     "ELER: Investitionen in materielle Vermögenswerte",
     "ELER: Zusammenarbeit",
+    "EGFL: Stützungsmaßnahmen im Weinsektor",
+    "EGFL: Kleinerzeugerregelung",
+    "EGFL: EUSchulprogramm für Obst, Gemüse und Milch",
+    "EGFL: Beihilfen im Bienenzuchtsektor",
+    "ELER: Investitionen in die Waldflächenentwicklung und die Verbesserung der Lebensfähigkeit der Wälder",
+    "ELER: Entwicklung der landwirtschaftlichen Betriebe und sonstiger Unternehmen",
+    "ELER: Technische Hilfe",
 ]
 
 
@@ -54,6 +61,10 @@ def scrape_data(zipcode):
 
         # Locate and click the submit button
         browser.find_element(By.XPATH, "//input[@type='submit']").click()
+
+        WebDriverWait(browser, 5).until(
+            EC.presence_of_element_located((By.CLASS_NAME, "listNavSelect"))
+        )
 
         # render 50 rows per page
         dropdown = browser.find_element(By.CLASS_NAME, "listNavSelect")
