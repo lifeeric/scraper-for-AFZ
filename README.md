@@ -17,7 +17,7 @@ You can install the required libraries using either `pip` or `poetry`.
 Navigate to your project directory and run the following command to install the required libraries using `pip`:
 
 ```sh
-pip install selenium
+pip install selenium webdriver-manager
 ```
 
 #### Using Poetry
