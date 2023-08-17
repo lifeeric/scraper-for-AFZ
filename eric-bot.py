@@ -101,7 +101,8 @@ def scrape_data(zipcode):
                     name_price[names[j].text] = prices[j].text
 
                 write_to_file(
-                    {"name": header, "Total": total_price[0].text, **name_price}
+                    {"name": header, "Total": total_price[0].text, **name_price},
+                    zipcode,
                 )
                 browser.back()
 
@@ -118,13 +119,13 @@ def pagination(browser):
     return total_pages, pages
 
 
-def write_to_file(data):
+def write_to_file(data, zipcode):
     with open("data.csv", "a", newline="", encoding="utf-8") as f:
         try:
             writer = csv.DictWriter(f, fieldnames=headers)
             writer.writerow(data)
         except:
-            print("[❌] ERROR_INCORRECT_DATA")
+            print("[❌] ERROR_INCORRECT_DATA", zipcode)
             print(f"[HEADER] {headers}")
             print(f"[ROW] {data}")
 
