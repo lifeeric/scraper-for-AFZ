@@ -7,6 +7,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 
 # Set up Chrome options for headless mode
@@ -15,7 +16,7 @@ chrome_options.add_argument("--headless")
 
 # Create a ChromeDriver instance with Chrome options
 browser = webdriver.Chrome(
-    executable_path=ChromeDriverManager().install(), options=chrome_options
+    service=Service(ChromeDriverManager().install()), options=chrome_options
 )
 
 
