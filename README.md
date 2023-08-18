@@ -33,7 +33,7 @@ poetry install
 To run the `eric-bot.py` script, execute the following command in your terminal:
 
 ```sh
-python3 eric-bot.py
+python3 eric-bot.py post_codes_Germany/inputfile.json scraped-data/outputfile.csv
 ```
 
 and it will give you output data in realtime in `data.csv`

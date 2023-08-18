@@ -1,6 +1,7 @@
 import re
 import csv
 import json
+import sys
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
@@ -131,7 +132,7 @@ def pagination(browser):
 
 
 def write_to_file(data, zipcode):
-    with open("data.csv", "a", newline="", encoding="utf-8") as f:
+    with open(sys.argv[2], "a", newline="", encoding="utf-8") as f:
         try:
             writer = csv.DictWriter(f, fieldnames=headers)
             writer.writerow(data)
@@ -142,8 +143,10 @@ def write_to_file(data, zipcode):
 
 
 def main():
+#    print(sys.argv[1], end = " ") # Input file
+#    print(sys.argv[2], end = " ") # Output file
     with open(
-        "georef-germany-postleitzahl.json",
+        sys.argv[1],
         "r",
         newline="",
     ) as f:
