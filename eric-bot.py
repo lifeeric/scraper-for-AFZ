@@ -12,7 +12,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 # Set up Chrome options for headless mode
 chrome_options = Options()
-# chrome_options.add_argument("--headless")
+chrome_options.add_argument("--headless")
 
 # Create a ChromeDriver instance with Chrome options
 browser = webdriver.Chrome(
