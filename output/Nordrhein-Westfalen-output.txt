@@ -2900,4 +2900,148 @@ Stacktrace:
 19  libsystem_pthread.dylib             0x00007ff80b5791d3 _pthread_start + 125
 20  libsystem_pthread.dylib             0x00007ff80b574bd3 thread_start + 15
 
-Progress: |██████████████████████████████████████████████████████████████████----| 95.1% CompleteAn error occurred: 
+Progress: |██████████████████████████████████████████████████████████████████----| 95.1% CompleteAn error occurred: Message: 
+Stacktrace:
+0   chromedriver                        0x0000000107203af8 chromedriver + 4987640
+1   chromedriver                        0x00000001071faeb3 chromedriver + 4951731
+2   chromedriver                        0x0000000106dae8d7 chromedriver + 444631
+3   chromedriver                        0x0000000106df4985 chromedriver + 731525
+4   chromedriver                        0x0000000106df4b41 chromedriver + 731969
+5   chromedriver                        0x0000000106e387c4 chromedriver + 1009604
+6   chromedriver                        0x0000000106e1ab3d chromedriver + 887613
+7   chromedriver                        0x0000000106e35d31 chromedriver + 998705
+8   chromedriver                        0x0000000106e1a8e3 chromedriver + 887011
+9   chromedriver                        0x0000000106de69b9 chromedriver + 674233
+10  chromedriver                        0x0000000106de7b9e chromedriver + 678814
+11  chromedriver                        0x00000001071bfdc9 chromedriver + 4709833
+12  chromedriver                        0x00000001071c4de4 chromedriver + 4730340
+13  chromedriver                        0x00000001071cbc99 chromedriver + 4758681
+14  chromedriver                        0x00000001071c5b3a chromedriver + 4733754
+15  chromedriver                        0x000000010719935c chromedriver + 4551516
+16  chromedriver                        0x00000001071e3908 chromedriver + 4856072
+17  chromedriver                        0x00000001071e3a87 chromedriver + 4856455
+18  chromedriver                        0x00000001071f3def chromedriver + 4922863
+19  libsystem_pthread.dylib             0x00007ff80b5791d3 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80b574bd3 thread_start + 15
+
+Progress: |██████████████████████████████████████████████████████████████████----| 95.2% CompleteProgress: |██████████████████████████████████████████████████████████████████----| 95.4% CompleteProgress: |██████████████████████████████████████████████████████████████████----| 95.5% CompleteProgress: |██████████████████████████████████████████████████████████████████----| 95.6% CompleteAn error occurred: Message: 
+Stacktrace:
+0   chromedriver                        0x0000000107203af8 chromedriver + 4987640
+1   chromedriver                        0x00000001071faeb3 chromedriver + 4951731
+2   chromedriver                        0x0000000106dae8d7 chromedriver + 444631
+3   chromedriver                        0x0000000106df4985 chromedriver + 731525
+4   chromedriver                        0x0000000106df4b41 chromedriver + 731969
+5   chromedriver                        0x0000000106e387c4 chromedriver + 1009604
+6   chromedriver                        0x0000000106e1ab3d chromedriver + 887613
+7   chromedriver                        0x0000000106e35d31 chromedriver + 998705
+8   chromedriver                        0x0000000106e1a8e3 chromedriver + 887011
+9   chromedriver                        0x0000000106de69b9 chromedriver + 674233
+10  chromedriver                        0x0000000106de7b9e chromedriver + 678814
+11  chromedriver                        0x00000001071bfdc9 chromedriver + 4709833
+12  chromedriver                        0x00000001071c4de4 chromedriver + 4730340
+13  chromedriver                        0x00000001071cbc99 chromedriver + 4758681
+14  chromedriver                        0x00000001071c5b3a chromedriver + 4733754
+15  chromedriver                        0x000000010719935c chromedriver + 4551516
+16  chromedriver                        0x00000001071e3908 chromedriver + 4856072
+17  chromedriver                        0x00000001071e3a87 chromedriver + 4856455
+18  chromedriver                        0x00000001071f3def chromedriver + 4922863
+19  libsystem_pthread.dylib             0x00007ff80b5791d3 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80b574bd3 thread_start + 15
+
+Progress: |██████████████████████████████████████████████████████████████████----| 95.7% CompleteProgress: |███████████████████████████████████████████████████████████████████---| 95.8% CompleteProgress: |███████████████████████████████████████████████████████████████████---| 95.9% CompleteProgress: |███████████████████████████████████████████████████████████████████---| 96.0% CompleteProgress: |███████████████████████████████████████████████████████████████████---| 96.1% CompleteProgress: |███████████████████████████████████████████████████████████████████---| 96.2% CompleteProgress: |███████████████████████████████████████████████████████████████████---| 96.4% CompleteProgress: |███████████████████████████████████████████████████████████████████---| 96.5% CompleteProgress: |███████████████████████████████████████████████████████████████████---| 96.6% CompleteProgress: |███████████████████████████████████████████████████████████████████---| 96.7% CompleteProgress: |███████████████████████████████████████████████████████████████████---| 96.8% CompleteProgress: |███████████████████████████████████████████████████████████████████---| 96.9% CompleteProgress: |███████████████████████████████████████████████████████████████████---| 97.0% CompleteProgress: |███████████████████████████████████████████████████████████████████---| 97.1% CompleteProgress: |████████████████████████████████████████████████████████████████████--| 97.2% CompleteProgress: |████████████████████████████████████████████████████████████████████--| 97.3% CompleteProgress: |████████████████████████████████████████████████████████████████████--| 97.5% CompleteProgress: |████████████████████████████████████████████████████████████████████--| 97.6% CompleteProgress: |████████████████████████████████████████████████████████████████████--| 97.7% CompleteAn error occurred: Message: 
+Stacktrace:
+0   chromedriver                        0x0000000107203af8 chromedriver + 4987640
+1   chromedriver                        0x00000001071faeb3 chromedriver + 4951731
+2   chromedriver                        0x0000000106dae8d7 chromedriver + 444631
+3   chromedriver                        0x0000000106df4985 chromedriver + 731525
+4   chromedriver                        0x0000000106df4b41 chromedriver + 731969
+5   chromedriver                        0x0000000106e387c4 chromedriver + 1009604
+6   chromedriver                        0x0000000106e1ab3d chromedriver + 887613
+7   chromedriver                        0x0000000106e35d31 chromedriver + 998705
+8   chromedriver                        0x0000000106e1a8e3 chromedriver + 887011
+9   chromedriver                        0x0000000106de69b9 chromedriver + 674233
+10  chromedriver                        0x0000000106de7b9e chromedriver + 678814
+11  chromedriver                        0x00000001071bfdc9 chromedriver + 4709833
+12  chromedriver                        0x00000001071c4de4 chromedriver + 4730340
+13  chromedriver                        0x00000001071cbc99 chromedriver + 4758681
+14  chromedriver                        0x00000001071c5b3a chromedriver + 4733754
+15  chromedriver                        0x000000010719935c chromedriver + 4551516
+16  chromedriver                        0x00000001071e3908 chromedriver + 4856072
+17  chromedriver                        0x00000001071e3a87 chromedriver + 4856455
+18  chromedriver                        0x00000001071f3def chromedriver + 4922863
+19  libsystem_pthread.dylib             0x00007ff80b5791d3 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80b574bd3 thread_start + 15
+
+Progress: |████████████████████████████████████████████████████████████████████--| 97.8% CompleteProgress: |████████████████████████████████████████████████████████████████████--| 97.9% CompleteProgress: |████████████████████████████████████████████████████████████████████--| 98.0% CompleteProgress: |████████████████████████████████████████████████████████████████████--| 98.1% CompleteAn error occurred: Message: 
+Stacktrace:
+0   chromedriver                        0x0000000107203af8 chromedriver + 4987640
+1   chromedriver                        0x00000001071faeb3 chromedriver + 4951731
+2   chromedriver                        0x0000000106dae8d7 chromedriver + 444631
+3   chromedriver                        0x0000000106df4985 chromedriver + 731525
+4   chromedriver                        0x0000000106df4b41 chromedriver + 731969
+5   chromedriver                        0x0000000106e387c4 chromedriver + 1009604
+6   chromedriver                        0x0000000106e1ab3d chromedriver + 887613
+7   chromedriver                        0x0000000106e35d31 chromedriver + 998705
+8   chromedriver                        0x0000000106e1a8e3 chromedriver + 887011
+9   chromedriver                        0x0000000106de69b9 chromedriver + 674233
+10  chromedriver                        0x0000000106de7b9e chromedriver + 678814
+11  chromedriver                        0x00000001071bfdc9 chromedriver + 4709833
+12  chromedriver                        0x00000001071c4de4 chromedriver + 4730340
+13  chromedriver                        0x00000001071cbc99 chromedriver + 4758681
+14  chromedriver                        0x00000001071c5b3a chromedriver + 4733754
+15  chromedriver                        0x000000010719935c chromedriver + 4551516
+16  chromedriver                        0x00000001071e3908 chromedriver + 4856072
+17  chromedriver                        0x00000001071e3a87 chromedriver + 4856455
+18  chromedriver                        0x00000001071f3def chromedriver + 4922863
+19  libsystem_pthread.dylib             0x00007ff80b5791d3 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80b574bd3 thread_start + 15
+
+Progress: |████████████████████████████████████████████████████████████████████--| 98.2% CompleteProgress: |████████████████████████████████████████████████████████████████████--| 98.3% CompleteProgress: |████████████████████████████████████████████████████████████████████--| 98.5% CompleteProgress: |████████████████████████████████████████████████████████████████████--| 98.6% CompleteProgress: |█████████████████████████████████████████████████████████████████████-| 98.7% CompleteProgress: |█████████████████████████████████████████████████████████████████████-| 98.8% CompleteProgress: |█████████████████████████████████████████████████████████████████████-| 98.9% CompleteProgress: |█████████████████████████████████████████████████████████████████████-| 99.0% CompleteProgress: |█████████████████████████████████████████████████████████████████████-| 99.1% CompleteProgress: |█████████████████████████████████████████████████████████████████████-| 99.2% CompleteAn error occurred: Message: 
+Stacktrace:
+0   chromedriver                        0x0000000107203af8 chromedriver + 4987640
+1   chromedriver                        0x00000001071faeb3 chromedriver + 4951731
+2   chromedriver                        0x0000000106dae8d7 chromedriver + 444631
+3   chromedriver                        0x0000000106df4985 chromedriver + 731525
+4   chromedriver                        0x0000000106df4b41 chromedriver + 731969
+5   chromedriver                        0x0000000106e387c4 chromedriver + 1009604
+6   chromedriver                        0x0000000106e1ab3d chromedriver + 887613
+7   chromedriver                        0x0000000106e35d31 chromedriver + 998705
+8   chromedriver                        0x0000000106e1a8e3 chromedriver + 887011
+9   chromedriver                        0x0000000106de69b9 chromedriver + 674233
+10  chromedriver                        0x0000000106de7b9e chromedriver + 678814
+11  chromedriver                        0x00000001071bfdc9 chromedriver + 4709833
+12  chromedriver                        0x00000001071c4de4 chromedriver + 4730340
+13  chromedriver                        0x00000001071cbc99 chromedriver + 4758681
+14  chromedriver                        0x00000001071c5b3a chromedriver + 4733754
+15  chromedriver                        0x000000010719935c chromedriver + 4551516
+16  chromedriver                        0x00000001071e3908 chromedriver + 4856072
+17  chromedriver                        0x00000001071e3a87 chromedriver + 4856455
+18  chromedriver                        0x00000001071f3def chromedriver + 4922863
+19  libsystem_pthread.dylib             0x00007ff80b5791d3 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80b574bd3 thread_start + 15
+
+Progress: |█████████████████████████████████████████████████████████████████████-| 99.3% CompleteProgress: |█████████████████████████████████████████████████████████████████████-| 99.4% CompleteProgress: |█████████████████████████████████████████████████████████████████████-| 99.6% CompleteProgress: |█████████████████████████████████████████████████████████████████████-| 99.7% CompleteProgress: |█████████████████████████████████████████████████████████████████████-| 99.8% CompleteAn error occurred: Message: 
+Stacktrace:
+0   chromedriver                        0x0000000107203af8 chromedriver + 4987640
+1   chromedriver                        0x00000001071faeb3 chromedriver + 4951731
+2   chromedriver                        0x0000000106dae8d7 chromedriver + 444631
+3   chromedriver                        0x0000000106df4985 chromedriver + 731525
+4   chromedriver                        0x0000000106df4b41 chromedriver + 731969
+5   chromedriver                        0x0000000106e387c4 chromedriver + 1009604
+6   chromedriver                        0x0000000106e1ab3d chromedriver + 887613
+7   chromedriver                        0x0000000106e35d31 chromedriver + 998705
+8   chromedriver                        0x0000000106e1a8e3 chromedriver + 887011
+9   chromedriver                        0x0000000106de69b9 chromedriver + 674233
+10  chromedriver                        0x0000000106de7b9e chromedriver + 678814
+11  chromedriver                        0x00000001071bfdc9 chromedriver + 4709833
+12  chromedriver                        0x00000001071c4de4 chromedriver + 4730340
+13  chromedriver                        0x00000001071cbc99 chromedriver + 4758681
+14  chromedriver                        0x00000001071c5b3a chromedriver + 4733754
+15  chromedriver                        0x000000010719935c chromedriver + 4551516
+16  chromedriver                        0x00000001071e3908 chromedriver + 4856072
+17  chromedriver                        0x00000001071e3a87 chromedriver + 4856455
+18  chromedriver                        0x00000001071f3def chromedriver + 4922863
+19  libsystem_pthread.dylib             0x00007ff80b5791d3 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80b574bd3 thread_start + 15
+
+Progress: |█████████████████████████████████████████████████████████████████████-| 99.9% CompleteProgress: |██████████████████████████████████████████████████████████████████████| 100.0% Complete
