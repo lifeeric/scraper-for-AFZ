@@ -30,10 +30,15 @@ poetry install
 
 ### Running the App
 
+Prepare the run by copying the header.csv file to the respective outputfile. Filenames of the output have to be maintained in shell script directly 
+```sh
+initialize_header.sh
+```
+
 To run the `eric-bot.py` script, execute the following command in your terminal:
 
 ```sh
 python3 eric-bot.py post_codes_Germany/inputfile.json scraped-data/outputfile.csv
 ```
 
-and it will give you output data in realtime in `data.csv`
+and it will give you output data in realtime in `outputfile.csv`
