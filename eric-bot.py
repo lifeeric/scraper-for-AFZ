@@ -51,6 +51,8 @@ headers = [
     "ELER: Wissenstransfer und Informationsmaßnahmen",
     "EGFL: Beihilfen im Obst- und Gemüsesektor",
     "EGFL: Beihilfe im Hopfensektor",
+    "ELER: Waldumwelt- und -klimadienstleistungen",
+    "ELER: Küsten- und Hochwasserschutz",
 ]
 
 
