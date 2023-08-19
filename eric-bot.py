@@ -53,6 +53,7 @@ headers = [
     "EGFL: Beihilfe im Hopfensektor",
     "ELER: Waldumwelt- und -klimadienstleistungen",
     "ELER: Küsten- und Hochwasserschutz",
+    "EGFL: Beihilfen für die private Lagerhaltung",
 ]
 
 
