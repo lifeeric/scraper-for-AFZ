@@ -46,6 +46,11 @@ headers = [
     "ELER: Investitionen in die Waldflächenentwicklung und die Verbesserung der Lebensfähigkeit der Wälder",
     "ELER: Entwicklung der landwirtschaftlichen Betriebe und sonstiger Unternehmen",
     "ELER: Technische Hilfe",
+    "ELER: Beratungs-, Betriebsführungs- und Vertretungsdienste",
+    "EGFL: Direktzahlungen",
+    "ELER: Wissenstransfer und Informationsmaßnahmen",
+    "EGFL: Beihilfen im Obst- und Gemüsesektor",
+    "EGFL: Beihilfe im Hopfensektor",
 ]
 
 
@@ -143,8 +148,8 @@ def write_to_file(data, zipcode):
 
 
 def main():
-#    print(sys.argv[1], end = " ") # Input file
-#    print(sys.argv[2], end = " ") # Output file
+    #    print(sys.argv[1], end = " ") # Input file
+    #    print(sys.argv[2], end = " ") # Output file
     with open(
         sys.argv[1],
         "r",
