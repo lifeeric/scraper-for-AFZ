@@ -1,125 +1,96 @@
-Progress: |█---------------------------------------------------------------------| 1.4% CompleteProgress: |██--------------------------------------------------------------------| 2.9% CompleteProgress: |███-------------------------------------------------------------------| 4.3% CompleteProgress: |████------------------------------------------------------------------| 5.8% CompleteProgress: |█████-----------------------------------------------------------------| 7.2% CompleteProgress: |██████----------------------------------------------------------------| 8.7% CompleteProgress: |███████---------------------------------------------------------------| 10.1% CompleteProgress: |████████--------------------------------------------------------------| 11.6% CompleteAn error occurred: Message: element click intercepted: Element <button class="linkBeg" name="showBeg" type="submit" value="3cd2a260-1d6a-4c0f-9c9f-e143dba31093" title="Detailansicht">...</button> is not clickable at point (307, 593). Other element would receive the click: <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">...</html>
-  (Session info: headless chrome=115.0.5790.170)
+Progress: |█---------------------------------------------------------------------| 1.4% CompleteProgress: |██--------------------------------------------------------------------| 2.9% CompleteProgress: |███-------------------------------------------------------------------| 4.3% CompleteProgress: |████------------------------------------------------------------------| 5.8% CompleteProgress: |█████-----------------------------------------------------------------| 7.2% CompleteProgress: |██████----------------------------------------------------------------| 8.7% CompleteProgress: |███████---------------------------------------------------------------| 10.1% CompleteProgress: |████████--------------------------------------------------------------| 11.6% CompleteProgress: |█████████-------------------------------------------------------------| 13.0% CompleteProgress: |██████████------------------------------------------------------------| 14.5% CompleteProgress: |███████████-----------------------------------------------------------| 15.9% CompleteProgress: |████████████----------------------------------------------------------| 17.4% CompleteProgress: |█████████████---------------------------------------------------------| 18.8% CompleteProgress: |██████████████--------------------------------------------------------| 20.3% CompleteProgress: |███████████████-------------------------------------------------------| 21.7% CompleteProgress: |████████████████------------------------------------------------------| 23.2% CompleteProgress: |█████████████████-----------------------------------------------------| 24.6% CompleteProgress: |██████████████████----------------------------------------------------| 26.1% CompleteProgress: |███████████████████---------------------------------------------------| 27.5% CompleteProgress: |████████████████████--------------------------------------------------| 29.0% CompleteAn error occurred: Message: 
 Stacktrace:
-0   chromedriver                        0x000000010b9f5af8 chromedriver + 4987640
-1   chromedriver                        0x000000010b9eceb3 chromedriver + 4951731
-2   chromedriver                        0x000000010b5a08d7 chromedriver + 444631
-3   chromedriver                        0x000000010b5ee578 chromedriver + 763256
-4   chromedriver                        0x000000010b5ebfc2 chromedriver + 753602
-5   chromedriver                        0x000000010b5e9504 chromedriver + 742660
-6   chromedriver                        0x000000010b5e82cf chromedriver + 737999
-7   chromedriver                        0x000000010b5dabfa chromedriver + 683002
-8   chromedriver                        0x000000010b60cb12 chromedriver + 887570
-9   chromedriver                        0x000000010b5da478 chromedriver + 681080
-10  chromedriver                        0x000000010b60ccce chromedriver + 888014
-11  chromedriver                        0x000000010b627d31 chromedriver + 998705
-12  chromedriver                        0x000000010b60c8e3 chromedriver + 887011
-13  chromedriver                        0x000000010b5d89b9 chromedriver + 674233
-14  chromedriver                        0x000000010b5d9b9e chromedriver + 678814
-15  chromedriver                        0x000000010b9b1dc9 chromedriver + 4709833
-16  chromedriver                        0x000000010b9b6de4 chromedriver + 4730340
-17  chromedriver                        0x000000010b9bdc99 chromedriver + 4758681
-18  chromedriver                        0x000000010b9b7b3a chromedriver + 4733754
-19  chromedriver                        0x000000010b98b35c chromedriver + 4551516
-20  chromedriver                        0x000000010b9d5908 chromedriver + 4856072
-21  chromedriver                        0x000000010b9d5a87 chromedriver + 4856455
-22  chromedriver                        0x000000010b9e5def chromedriver + 4922863
-23  libsystem_pthread.dylib             0x00007ff80b5791d3 _pthread_start + 125
-24  libsystem_pthread.dylib             0x00007ff80b574bd3 thread_start + 15
-
-Progress: |█████████-------------------------------------------------------------| 13.0% CompleteProgress: |██████████------------------------------------------------------------| 14.5% CompleteProgress: |███████████-----------------------------------------------------------| 15.9% CompleteProgress: |████████████----------------------------------------------------------| 17.4% CompleteProgress: |█████████████---------------------------------------------------------| 18.8% CompleteProgress: |██████████████--------------------------------------------------------| 20.3% CompleteProgress: |███████████████-------------------------------------------------------| 21.7% CompleteProgress: |████████████████------------------------------------------------------| 23.2% CompleteProgress: |█████████████████-----------------------------------------------------| 24.6% CompleteProgress: |██████████████████----------------------------------------------------| 26.1% CompleteProgress: |███████████████████---------------------------------------------------| 27.5% CompleteProgress: |████████████████████--------------------------------------------------| 29.0% CompleteAn error occurred: Message: 
-Stacktrace:
-0   chromedriver                        0x000000010b9f5af8 chromedriver + 4987640
-1   chromedriver                        0x000000010b9eceb3 chromedriver + 4951731
-2   chromedriver                        0x000000010b5a08d7 chromedriver + 444631
-3   chromedriver                        0x000000010b5e6985 chromedriver + 731525
-4   chromedriver                        0x000000010b5e6b41 chromedriver + 731969
-5   chromedriver                        0x000000010b62a7c4 chromedriver + 1009604
-6   chromedriver                        0x000000010b60cb3d chromedriver + 887613
-7   chromedriver                        0x000000010b627d31 chromedriver + 998705
-8   chromedriver                        0x000000010b60c8e3 chromedriver + 887011
-9   chromedriver                        0x000000010b5d89b9 chromedriver + 674233
-10  chromedriver                        0x000000010b5d9b9e chromedriver + 678814
-11  chromedriver                        0x000000010b9b1dc9 chromedriver + 4709833
-12  chromedriver                        0x000000010b9b6de4 chromedriver + 4730340
-13  chromedriver                        0x000000010b9bdc99 chromedriver + 4758681
-14  chromedriver                        0x000000010b9b7b3a chromedriver + 4733754
-15  chromedriver                        0x000000010b98b35c chromedriver + 4551516
-16  chromedriver                        0x000000010b9d5908 chromedriver + 4856072
-17  chromedriver                        0x000000010b9d5a87 chromedriver + 4856455
-18  chromedriver                        0x000000010b9e5def chromedriver + 4922863
+0   chromedriver                        0x00000001029deaf8 chromedriver + 4987640
+1   chromedriver                        0x00000001029d5eb3 chromedriver + 4951731
+2   chromedriver                        0x00000001025898d7 chromedriver + 444631
+3   chromedriver                        0x00000001025cf985 chromedriver + 731525
+4   chromedriver                        0x00000001025cfb41 chromedriver + 731969
+5   chromedriver                        0x00000001026137c4 chromedriver + 1009604
+6   chromedriver                        0x00000001025f5b3d chromedriver + 887613
+7   chromedriver                        0x0000000102610d31 chromedriver + 998705
+8   chromedriver                        0x00000001025f58e3 chromedriver + 887011
+9   chromedriver                        0x00000001025c19b9 chromedriver + 674233
+10  chromedriver                        0x00000001025c2b9e chromedriver + 678814
+11  chromedriver                        0x000000010299adc9 chromedriver + 4709833
+12  chromedriver                        0x000000010299fde4 chromedriver + 4730340
+13  chromedriver                        0x00000001029a6c99 chromedriver + 4758681
+14  chromedriver                        0x00000001029a0b3a chromedriver + 4733754
+15  chromedriver                        0x000000010297435c chromedriver + 4551516
+16  chromedriver                        0x00000001029be908 chromedriver + 4856072
+17  chromedriver                        0x00000001029bea87 chromedriver + 4856455
+18  chromedriver                        0x00000001029cedef chromedriver + 4922863
 19  libsystem_pthread.dylib             0x00007ff80b5791d3 _pthread_start + 125
 20  libsystem_pthread.dylib             0x00007ff80b574bd3 thread_start + 15
 
 Progress: |█████████████████████-------------------------------------------------| 30.4% CompleteProgress: |██████████████████████------------------------------------------------| 31.9% CompleteProgress: |███████████████████████-----------------------------------------------| 33.3% CompleteProgress: |████████████████████████----------------------------------------------| 34.8% CompleteAn error occurred: Message: 
 Stacktrace:
-0   chromedriver                        0x000000010b9f5af8 chromedriver + 4987640
-1   chromedriver                        0x000000010b9eceb3 chromedriver + 4951731
-2   chromedriver                        0x000000010b5a08d7 chromedriver + 444631
-3   chromedriver                        0x000000010b5e6985 chromedriver + 731525
-4   chromedriver                        0x000000010b5e6b41 chromedriver + 731969
-5   chromedriver                        0x000000010b62a7c4 chromedriver + 1009604
-6   chromedriver                        0x000000010b60cb3d chromedriver + 887613
-7   chromedriver                        0x000000010b627d31 chromedriver + 998705
-8   chromedriver                        0x000000010b60c8e3 chromedriver + 887011
-9   chromedriver                        0x000000010b5d89b9 chromedriver + 674233
-10  chromedriver                        0x000000010b5d9b9e chromedriver + 678814
-11  chromedriver                        0x000000010b9b1dc9 chromedriver + 4709833
-12  chromedriver                        0x000000010b9b6de4 chromedriver + 4730340
-13  chromedriver                        0x000000010b9bdc99 chromedriver + 4758681
-14  chromedriver                        0x000000010b9b7b3a chromedriver + 4733754
-15  chromedriver                        0x000000010b98b35c chromedriver + 4551516
-16  chromedriver                        0x000000010b9d5908 chromedriver + 4856072
-17  chromedriver                        0x000000010b9d5a87 chromedriver + 4856455
-18  chromedriver                        0x000000010b9e5def chromedriver + 4922863
+0   chromedriver                        0x00000001029deaf8 chromedriver + 4987640
+1   chromedriver                        0x00000001029d5eb3 chromedriver + 4951731
+2   chromedriver                        0x00000001025898d7 chromedriver + 444631
+3   chromedriver                        0x00000001025cf985 chromedriver + 731525
+4   chromedriver                        0x00000001025cfb41 chromedriver + 731969
+5   chromedriver                        0x00000001026137c4 chromedriver + 1009604
+6   chromedriver                        0x00000001025f5b3d chromedriver + 887613
+7   chromedriver                        0x0000000102610d31 chromedriver + 998705
+8   chromedriver                        0x00000001025f58e3 chromedriver + 887011
+9   chromedriver                        0x00000001025c19b9 chromedriver + 674233
+10  chromedriver                        0x00000001025c2b9e chromedriver + 678814
+11  chromedriver                        0x000000010299adc9 chromedriver + 4709833
+12  chromedriver                        0x000000010299fde4 chromedriver + 4730340
+13  chromedriver                        0x00000001029a6c99 chromedriver + 4758681
+14  chromedriver                        0x00000001029a0b3a chromedriver + 4733754
+15  chromedriver                        0x000000010297435c chromedriver + 4551516
+16  chromedriver                        0x00000001029be908 chromedriver + 4856072
+17  chromedriver                        0x00000001029bea87 chromedriver + 4856455
+18  chromedriver                        0x00000001029cedef chromedriver + 4922863
 19  libsystem_pthread.dylib             0x00007ff80b5791d3 _pthread_start + 125
 20  libsystem_pthread.dylib             0x00007ff80b574bd3 thread_start + 15
 
 Progress: |█████████████████████████---------------------------------------------| 36.2% CompleteProgress: |██████████████████████████--------------------------------------------| 37.7% CompleteProgress: |███████████████████████████-------------------------------------------| 39.1% CompleteProgress: |████████████████████████████------------------------------------------| 40.6% CompleteProgress: |█████████████████████████████-----------------------------------------| 42.0% CompleteProgress: |██████████████████████████████----------------------------------------| 43.5% CompleteProgress: |███████████████████████████████---------------------------------------| 44.9% CompleteProgress: |████████████████████████████████--------------------------------------| 46.4% CompleteProgress: |█████████████████████████████████-------------------------------------| 47.8% CompleteProgress: |██████████████████████████████████------------------------------------| 49.3% CompleteProgress: |███████████████████████████████████-----------------------------------| 50.7% CompleteProgress: |████████████████████████████████████----------------------------------| 52.2% CompleteProgress: |█████████████████████████████████████---------------------------------| 53.6% CompleteProgress: |██████████████████████████████████████--------------------------------| 55.1% CompleteProgress: |███████████████████████████████████████-------------------------------| 56.5% CompleteProgress: |████████████████████████████████████████------------------------------| 58.0% CompleteProgress: |█████████████████████████████████████████-----------------------------| 59.4% CompleteProgress: |██████████████████████████████████████████----------------------------| 60.9% CompleteProgress: |███████████████████████████████████████████---------------------------| 62.3% CompleteProgress: |████████████████████████████████████████████--------------------------| 63.8% CompleteProgress: |█████████████████████████████████████████████-------------------------| 65.2% CompleteProgress: |██████████████████████████████████████████████------------------------| 66.7% CompleteProgress: |███████████████████████████████████████████████-----------------------| 68.1% CompleteProgress: |████████████████████████████████████████████████----------------------| 69.6% CompleteProgress: |█████████████████████████████████████████████████---------------------| 71.0% CompleteProgress: |██████████████████████████████████████████████████--------------------| 72.5% CompleteProgress: |███████████████████████████████████████████████████-------------------| 73.9% CompleteProgress: |████████████████████████████████████████████████████------------------| 75.4% CompleteAn error occurred: Message: 
 Stacktrace:
-0   chromedriver                        0x000000010b9f5af8 chromedriver + 4987640
-1   chromedriver                        0x000000010b9eceb3 chromedriver + 4951731
-2   chromedriver                        0x000000010b5a08d7 chromedriver + 444631
-3   chromedriver                        0x000000010b5e6985 chromedriver + 731525
-4   chromedriver                        0x000000010b5e6b41 chromedriver + 731969
-5   chromedriver                        0x000000010b62a7c4 chromedriver + 1009604
-6   chromedriver                        0x000000010b60cb3d chromedriver + 887613
-7   chromedriver                        0x000000010b627d31 chromedriver + 998705
-8   chromedriver                        0x000000010b60c8e3 chromedriver + 887011
-9   chromedriver                        0x000000010b5d89b9 chromedriver + 674233
-10  chromedriver                        0x000000010b5d9b9e chromedriver + 678814
-11  chromedriver                        0x000000010b9b1dc9 chromedriver + 4709833
-12  chromedriver                        0x000000010b9b6de4 chromedriver + 4730340
-13  chromedriver                        0x000000010b9bdc99 chromedriver + 4758681
-14  chromedriver                        0x000000010b9b7b3a chromedriver + 4733754
-15  chromedriver                        0x000000010b98b35c chromedriver + 4551516
-16  chromedriver                        0x000000010b9d5908 chromedriver + 4856072
-17  chromedriver                        0x000000010b9d5a87 chromedriver + 4856455
-18  chromedriver                        0x000000010b9e5def chromedriver + 4922863
+0   chromedriver                        0x00000001029deaf8 chromedriver + 4987640
+1   chromedriver                        0x00000001029d5eb3 chromedriver + 4951731
+2   chromedriver                        0x00000001025898d7 chromedriver + 444631
+3   chromedriver                        0x00000001025cf985 chromedriver + 731525
+4   chromedriver                        0x00000001025cfb41 chromedriver + 731969
+5   chromedriver                        0x00000001026137c4 chromedriver + 1009604
+6   chromedriver                        0x00000001025f5b3d chromedriver + 887613
+7   chromedriver                        0x0000000102610d31 chromedriver + 998705
+8   chromedriver                        0x00000001025f58e3 chromedriver + 887011
+9   chromedriver                        0x00000001025c19b9 chromedriver + 674233
+10  chromedriver                        0x00000001025c2b9e chromedriver + 678814
+11  chromedriver                        0x000000010299adc9 chromedriver + 4709833
+12  chromedriver                        0x000000010299fde4 chromedriver + 4730340
+13  chromedriver                        0x00000001029a6c99 chromedriver + 4758681
+14  chromedriver                        0x00000001029a0b3a chromedriver + 4733754
+15  chromedriver                        0x000000010297435c chromedriver + 4551516
+16  chromedriver                        0x00000001029be908 chromedriver + 4856072
+17  chromedriver                        0x00000001029bea87 chromedriver + 4856455
+18  chromedriver                        0x00000001029cedef chromedriver + 4922863
 19  libsystem_pthread.dylib             0x00007ff80b5791d3 _pthread_start + 125
 20  libsystem_pthread.dylib             0x00007ff80b574bd3 thread_start + 15
 
 Progress: |█████████████████████████████████████████████████████-----------------| 76.8% CompleteProgress: |██████████████████████████████████████████████████████----------------| 78.3% CompleteProgress: |███████████████████████████████████████████████████████---------------| 79.7% CompleteAn error occurred: Message: 
 Stacktrace:
-0   chromedriver                        0x000000010b9f5af8 chromedriver + 4987640
-1   chromedriver                        0x000000010b9eceb3 chromedriver + 4951731
-2   chromedriver                        0x000000010b5a08d7 chromedriver + 444631
-3   chromedriver                        0x000000010b5e6985 chromedriver + 731525
-4   chromedriver                        0x000000010b5e6b41 chromedriver + 731969
-5   chromedriver                        0x000000010b62a7c4 chromedriver + 1009604
-6   chromedriver                        0x000000010b60cb3d chromedriver + 887613
-7   chromedriver                        0x000000010b627d31 chromedriver + 998705
-8   chromedriver                        0x000000010b60c8e3 chromedriver + 887011
-9   chromedriver                        0x000000010b5d89b9 chromedriver + 674233
-10  chromedriver                        0x000000010b5d9b9e chromedriver + 678814
-11  chromedriver                        0x000000010b9b1dc9 chromedriver + 4709833
-12  chromedriver                        0x000000010b9b6de4 chromedriver + 4730340
-13  chromedriver                        0x000000010b9bdc99 chromedriver + 4758681
-14  chromedriver                        0x000000010b9b7b3a chromedriver + 4733754
-15  chromedriver                        0x000000010b98b35c chromedriver + 4551516
-16  chromedriver                        0x000000010b9d5908 chromedriver + 4856072
-17  chromedriver                        0x000000010b9d5a87 chromedriver + 4856455
-18  chromedriver                        0x000000010b9e5def chromedriver + 4922863
+0   chromedriver                        0x00000001029deaf8 chromedriver + 4987640
+1   chromedriver                        0x00000001029d5eb3 chromedriver + 4951731
+2   chromedriver                        0x00000001025898d7 chromedriver + 444631
+3   chromedriver                        0x00000001025cf985 chromedriver + 731525
+4   chromedriver                        0x00000001025cfb41 chromedriver + 731969
+5   chromedriver                        0x00000001026137c4 chromedriver + 1009604
+6   chromedriver                        0x00000001025f5b3d chromedriver + 887613
+7   chromedriver                        0x0000000102610d31 chromedriver + 998705
+8   chromedriver                        0x00000001025f58e3 chromedriver + 887011
+9   chromedriver                        0x00000001025c19b9 chromedriver + 674233
+10  chromedriver                        0x00000001025c2b9e chromedriver + 678814
+11  chromedriver                        0x000000010299adc9 chromedriver + 4709833
+12  chromedriver                        0x000000010299fde4 chromedriver + 4730340
+13  chromedriver                        0x00000001029a6c99 chromedriver + 4758681
+14  chromedriver                        0x00000001029a0b3a chromedriver + 4733754
+15  chromedriver                        0x000000010297435c chromedriver + 4551516
+16  chromedriver                        0x00000001029be908 chromedriver + 4856072
+17  chromedriver                        0x00000001029bea87 chromedriver + 4856455
+18  chromedriver                        0x00000001029cedef chromedriver + 4922863
 19  libsystem_pthread.dylib             0x00007ff80b5791d3 _pthread_start + 125
 20  libsystem_pthread.dylib             0x00007ff80b574bd3 thread_start + 15
 
