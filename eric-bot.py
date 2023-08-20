@@ -55,6 +55,8 @@ headers = [
     "ELER: Waldumwelt- und -klimadienstleistungen",
     "ELER: Küsten- und Hochwasserschutz",
     "EGFL: Beihilfen für die private Lagerhaltung",
+    "EGFL: Maßnahmen gegen Marktstörungen",
+    "EGFL: Informations- und Absatzförderungsmaßnahmen",
 ]
 
 
