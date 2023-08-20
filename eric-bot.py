@@ -24,6 +24,7 @@ browser = webdriver.Chrome(
 # CSV Header
 headers = [
     "name",
+    "Total Data",
     "Total",
     "EGFL: Basisprämie",
     "EGFL: Umverteilungsprämie",
@@ -78,6 +79,12 @@ def scrape_data(zipcode):
         # render 50 rows per page
         dropdown = browser.find_element(By.CLASS_NAME, "listNavSelect")
         dropdown.send_keys("50")
+        total_data = (
+            browser.find_element(By.ID, "listNavLeft")
+            .find_element(By.TAG_NAME, "span")
+            .text
+        )
+        total_data = re.findall("\d+", total_data)[0]
         total_pages, pages = pagination(browser)
 
         for pn in range(1, int(total_pages) + 1):
@@ -121,7 +128,12 @@ def scrape_data(zipcode):
                     name_price[names[j].text] = prices[j].text
 
                 write_to_file(
-                    {"name": header, "Total": total_price[0].text, **name_price},
+                    {
+                        "name": header,
+                        "Total Data": total_data,
+                        "Total": total_price[0].text,
+                        **name_price,
+                    },
                     zipcode,
                 )
                 browser.back()
