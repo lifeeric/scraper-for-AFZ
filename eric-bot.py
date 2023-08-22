@@ -8,12 +8,13 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 
 # Set up Chrome options for headless mode
 chrome_options = Options()
-chrome_options.add_argument("--headless")
+# chrome_options.add_argument("--headless")
 
 # Create a ChromeDriver instance with Chrome options
 browser = webdriver.Chrome(
@@ -60,6 +61,12 @@ headers = [
 ]
 
 
+# Exception
+class NoDataFoundException(BaseException):
+    "raise when no data found for the zipcode"
+    pass
+
+
 def scrape_data(zipcode):
     # Open the desired website
     browser.get("https://www.agrar-fischerei-zahlungen.de/Suche")
@@ -74,7 +81,14 @@ def scrape_data(zipcode):
         # Locate and click the submit button
         browser.find_element(By.XPATH, "//input[@type='submit']").click()
 
-        WebDriverWait(browser, 5).until(
+        # If not data found for the zip code
+        try:
+            browser.find_element(By.ID, "error")
+            raise NoDataFoundException(f"NO_DATA_FOUND: {zipcode}")
+        except NoSuchElementException:
+            pass
+
+        WebDriverWait(browser, 10).until(
             EC.presence_of_element_located((By.CLASS_NAME, "listNavSelect"))
         )
 
@@ -106,7 +120,7 @@ def scrape_data(zipcode):
             for i, _ in enumerate(all_elements):
                 browser.find_elements(By.CLASS_NAME, "linkBeg")[i].click()
 
-                WebDriverWait(browser, 5).until(
+                WebDriverWait(browser, 10).until(
                     EC.presence_of_element_located(
                         (
                             By.XPATH,
@@ -140,8 +154,8 @@ def scrape_data(zipcode):
                 )
                 browser.back()
 
-    except Exception as e:
-        print("An error occurred:", e)
+    except NoDataFoundException as e:
+        print("[🟡]", e)
 
 
 def pagination(browser):
